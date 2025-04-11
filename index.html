@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte de Visite - Morlende Guil Alex</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-800 font-sans">
+    <div class="language-switcher fixed top-4 right-4">
+      <select id="languageSelect" class="border rounded px-2 py-1">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <div class="min-h-screen flex items-center justify-center px-4">
+      <div class="card bg-white shadow-xl rounded-3xl p-8 max-w-md w-full text-center space-y-6 transform transition duration-500 hover:scale-105">
+        <div class="flex justify-center">
+          <img id="logoImage" src="src/logo_mfbpp_fr.png" alt="Logo entreprise" class="h-16 mb-4" />
+        </div>
+
+        <label for="upload" class="relative block w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-md cursor-pointer">
+          <img id="profileImage" src="src/alex.jpeg" alt="Photo de profil" class="object-cover w-full h-full" />
+          <input type="file" id="upload" accept="image/*" class="hidden" />
+        </label>
+
+        <div>
+          <h1 class="text-3xl font-extrabold">Morlende Guil Alex</h1>
+          <p id="titleText" class="text-gray-500 text-base">Homme politique – Acteur du changement | Expert RH | Stratégiste du développement national et créateur du programme Éveil & Vision (VisionNova)</p>
+        </div>
+
+        <div class="text-left space-y-1 text-sm">
+          <p><strong id="labelPhone">Téléphone :</strong> +242 06 852 6833 / +221 77 232 1610</p>
+          <p><strong id="labelEmail">Email :</strong>&nbsp;morlende158@gmail.com</p>
+          <p><strong id="labelAddress">Adresse :</strong>&nbsp;Makanbadilou (VSD), Djiri, Brazzaville, République du Congo</p>
+        </div>
+
+        <div class="flex justify-center gap-5">
+          <a href="https://www.instagram.com/alex_morlende_1er?igsh=M2NlaTk5YmptYnl6&utm_source=qr" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="INSTAGRAM" class="w-6 h-6" />
+          </a>
+          <a href="https://www.facebook.com/share/1Ew7S1KkCW/?mibextid=wwXIfr" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111393.png" alt="FACEBOOK" class="w-6 h-6" />
+          </a>
+          <a href="https://wa.me/242068526833" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="w-6 h-6" />
+          </a>
+        </div>
+
+        <button onclick="downloadVCF()" id="saveBtn" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow">
+          Enregistrer le contact
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
