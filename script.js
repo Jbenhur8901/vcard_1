@@ -15,14 +15,14 @@ const translations = {
     phone: "Téléphone :",
     email: "Email :",
     address: "Adresse :",
-    save: "Enregistrer le contact",
+    save: "Appeler", // <-- mise à jour ici
   },
   en: {
     title: "Inspector of Finances, Head of GPEC Office",
     phone: "Phone:",
     email: "Email:",
     address: "Address:",
-    save: "Save contact",
+    save: "Call", // <-- mise à jour ici
   },
 };
 
